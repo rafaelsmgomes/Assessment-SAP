@@ -1,0 +1,18 @@
+.body{
+	&__content{    
+    width: 70rem;
+    margin: 0 auto;
+    padding-top: 4.00rem; 
+    position: relative;
+		@include layoutOrientation;
+		
+		@include bp($width-1){
+			width: 83.333%;		
+		}
+
+		@include bp($width-5){
+			width: 95%;
+		}
+		
+  }
+}

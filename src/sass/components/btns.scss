@@ -1,0 +1,131 @@
+.btn{
+	&__progress{
+		display: none;
+		&--1{
+			display: flex;
+		}
+		&--7,
+		&--9,
+		&--27{
+			width: 12.00rem;
+	    height: 2.50rem;
+	    border-radius: 5.00rem;
+	    display: flex;
+	    justify-content: space-between;
+	    cursor: pointer;
+	    align-items: center;
+	    padding: 0.20rem 0.45rem;
+	    border: 0.05rem solid $color-white-1;
+	    text-decoration: none;
+	    background: transparent;
+	    font-size: 1.20rem;
+
+	    justify-content: center;
+	    color: $color-white-1;
+	    font-family: $font-b;
+
+	    margin-top: 0;
+	    position: absolute;
+	    left: auto;
+	    bottom: -3.25rem;
+	 
+
+	    @include bph(900){	    	
+    		bottom: 0rem;
+	    }
+
+	   //  @include bp($width-1){
+				// @include bph(950){
+				// 	bottom: -2rem;
+				// }
+	   //  }
+
+	    @include bp($width-5){
+	    	left: 0;
+    		bottom: -2.5rem;
+	    }
+		}
+		&--6{
+			background: $color-green-1;
+		}
+		&--26{
+			background: $color-red-1;
+			@include bp($width-5){
+				bottom: -8.5rem;
+			}
+		}
+	}
+
+	&__regress{
+		// width: 2.00rem;
+		width: 4.65rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: solid 0.1rem $color-white-1;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity $timing-2;
+		pointer-events: none;
+		opacity: 0;
+		display: flex;		
+
+		&--0{
+			background-color: $color-green-1;
+		}
+		&--1{
+			background-color: $color-blue-1;
+		}
+		&--2{
+			background-color: $color-red-1;	
+		}
+		&--3{
+			background-color: $color-grey-1;	
+		}		
+
+		&.show{
+			pointer-events: auto;
+			opacity: 1;
+			display: flex;
+		}
+		// &.rotate--1{
+		// 	transform: rotate(180deg);  
+		// }
+
+		// & > img{
+
+		// 	width: 60%;
+		// 	height: 60%;
+		// }
+
+		& > span{
+			font-family: $font-reg;
+			color: $color-white-1;
+			font-size: 0.80rem;
+		}
+	}
+	&__pdf{
+    display: flex;
+    width: fit-content;
+    background-color: $color-green-2;
+    margin: 0 auto;
+    margin-top: 3.75rem;
+    margin-bottom: 5.00rem;
+    height: 3.80rem;
+    width: 28.00rem;    
+    padding-left: 2.20rem;
+    border-radius: 5.00rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.20rem;
+    font-family: $font-b;    
+    text-decoration: none;
+    cursor: pointer;
+    color: $color-white-1;
+    @include bp($width-1){
+    	margin-top: 0;
+    }
+	}
+
+}
+

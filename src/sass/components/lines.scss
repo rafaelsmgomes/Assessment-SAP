@@ -1,0 +1,73 @@
+.line{
+	
+	stroke: $color-white-1;
+  stroke-width: 0.15rem;
+  stroke-dasharray: 4;
+  stroke-dashoffset: 8;
+  animation: stroke 0.2s linear infinite;
+	opacity: 0;
+
+  &--x-1{
+    stroke: $color-white-1;
+    stroke-width: 0.15rem;
+    stroke-dasharray: 4;
+    stroke-dashoffset: 8;
+  }
+
+  &.activate{
+    animation: fadewhite .5s linear;
+    stroke: $color-white-1;
+    stroke-dasharray: 0;
+  }
+  
+  &.deactivate{
+    animation: fadeorange .5s linear;
+    stroke: $color-white-1;
+    stroke-dasharray: 4;   
+
+    stroke-width: 2;
+    stroke-dasharray: 4;
+    stroke-dashoffset: 8;
+    animation: stroke 0.2s linear infinite;
+    opacity: 0;     
+  }
+
+  &.show{
+    opacity: 1;
+  }
+
+	&__wrapper{
+    height: 100vh;
+    width: 70rem;
+    position: absolute;
+    z-index: -100;
+    overflow: visible;
+    left: 50%; 
+    transform: translateX(-50%);
+    @include bp($width-1){
+      width: 83.333%;
+    }    
+    @include bp($width-5){
+      width: 95%;
+    }
+
+
+    &--x{
+      height: 6.70rem;
+      padding: 0;
+      width: 77%;
+      margin-left: 6.95rem;
+      position: relative;
+      z-index: 0;
+      overflow: hidden;
+      background-image: url(../assets/images/desktop/connecting-lines.png);
+      background-size: 100%;
+      background-repeat: no-repeat;      
+      margin-top: -0.80rem;
+
+      @include bp($width-1){
+        display: none;
+      }
+    }
+	}
+}

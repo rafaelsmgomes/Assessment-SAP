@@ -1,0 +1,120 @@
+@font-face { 
+  font-family: "OracleReg";
+  src: url("../fonts/OracleSans_Rg.ttf");
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "OracleLite";
+  src: url("../fonts/OracleSans_Lt.ttf");
+  font-weight: normal; 
+}
+@font-face {
+  font-family: "OracleB";
+  src: url("../fonts/OracleSans_SBd.ttf");
+  font-weight: normal; 
+}
+
+.main{
+	&__subheader{
+		&--1{
+		color: $color-white-1;
+    font-size: 1.50rem;
+    font-family: $font-b;
+    margin-top: 0.75rem;
+    display: block;
+
+      @include bp($width-3){
+        @include bph(600){
+          font-size: 1.5rem;
+        }
+      }
+		}
+	}
+	&__title{
+		font-size: 2.4rem;
+    font-family: $font-b;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: $color-white-1;
+    margin-top: 1.05rem;    
+    &--1{
+    	width: 62.25rem;
+  
+      @include bp($width-1){
+        width: 90%;
+      }
+      @include bp($width-2){
+        width: 100%;
+        font-size: 2rem;
+      }
+      @include bp($width-3){
+        @include bph(600){
+          font-size: 1.5rem;
+        }
+      }
+      @include bp($width-4){
+        font-size: 1.8rem;
+        margin-top: .95rem;
+      }
+
+    }
+	}
+	&__direction{
+		font-size: 0.95em;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.32;
+    letter-spacing: normal;
+    color: $color-white-1;
+    height: 3.25rem;
+    font-family: $font-reg;
+    margin-top: 0.80rem;
+    @include bp($width-1){
+      @include bph(900){
+        font-size: 1.19rem;
+      }
+    }
+	}
+}
+
+.results{
+  &__title{
+    &--1{
+      font-family: $font-b;
+      font-size: 2.80rem;
+      margin-top: 2.00rem;
+      color: $color-white-1;
+    }
+  }
+  &__text{
+    &--wrapper{
+      width: 31.70rem;
+      @include bp(1100){
+        margin-top: 3.00rem;
+      }
+      @include bp(1000){
+        width: 90%;
+      }
+    }
+    &--1{
+      font-family: $font-reg;
+      color: $color-white-1;
+      font-size: 1rem;
+      @include bp(1000){
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  &__header{
+    &--1{
+      font-family: $font-b;
+      font-size: 1.60rem;
+      color: $color-white-1; 
+    }
+  }
+}

@@ -1,0 +1,62 @@
+// FONT-FAMILY
+$font-reg: OracleReg, Arial, Helvetica, sans-serif;
+$font-lite: OracleLite, Arial, Helvetica, sans-serif;
+$font-b: OracleB, Arial, Helvetica, sans-serif;
+
+// COLORS
+$color-white-1: #fcfbfa;
+
+$color-orange-1: #ae562c;
+$color-orange-2: #a25a36;
+
+$color-brown-1: #282623;
+$color-brown-2: #56504b;
+
+$color-green-1: #759C6C;
+$color-green-2: #2B6242;
+
+$color-blue-1: #2B6242;
+$color-blue-2: #759C6C;
+
+$color-red-1: #41817E;
+
+$color-mustard-1: #FACD62;
+
+$color-tan-1: #2C5967;
+
+$color-grey-1: #2C5967;
+$color-grey-2: #67605b;
+$color-grey-3: #94AFAF;
+$color-grey-4: #312D2A;
+
+// TIMING
+$timing-1: 1500;
+$timing-2: 300ms;
+
+// WIDTH
+$width-1: 1440;
+$width-2: 1024;
+$width-3: 910;
+$width-4: 767;
+$width-5: 666;
+
+:export {
+  white1: $color-white-1;
+  orange1: $color-orange-1;
+  brown1: $color-brown-1;	
+	brown2: $color-brown-2;
+	
+	green1: $color-green-1;
+	green2: $color-green-2;
+
+	blue1: $color-blue-1;
+	blue2: $color-blue-2;	
+
+	red1: $color-red-1;
+	tan1: $color-tan-1;
+
+	grey1: $color-grey-1;
+	grey2: $color-grey-2;		
+
+	timing1: $timing-1;
+}

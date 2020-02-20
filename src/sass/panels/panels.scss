@@ -1,0 +1,19 @@
+.panel{
+	height: 100vh;
+	position: absolute;
+	width: 100vw;
+  z-index: -101;
+  opacity: 0;
+  &--activate{
+    z-index: 10;
+    opacity: 1;
+  }
+
+  //THIS IS THE RESULTS PANEL
+  // &--41{
+  //   overflow-y: scroll;    
+  // }
+  // &--41{
+  //   margin-bottom: 5.50rem;
+  // }
+}

@@ -1,0 +1,25 @@
+.cta{
+	&__wrapper{
+		width: 35.40rem;
+    height: 10rem;
+    border: 2px solid #56504b;
+    position: absolute;
+    left: 54vw;
+    padding: 0.80rem 0 0.80rem 0.80rem;
+    transform: translate(0%, 0%);
+    bottom: 0;
+	}
+    &__txt{        
+        font-size: 0.8rem;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.31;
+        letter-spacing: normal;
+        color: #cad9de;
+        left: 52vw;
+        &--1{
+            width: 15.25rem;
+        }
+    }
+}
