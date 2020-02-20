@@ -1,4 +1,12 @@
 .header{
+	&__bg{
+		background: red;
+    height: 100%;
+    width: 150vw;
+    margin-top: -0.48rem;
+    position: absolute;
+    z-index: -1;
+    margin-left: -50vw;	}
 	&__logo{
     flex: 0 0 8.25rem;
     height: 2.15rem;
