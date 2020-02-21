@@ -27,34 +27,35 @@ const question_length = panels.length-2;
 const timing = variables.timing1;
 state.qLen = question_length;
 state.white = variables.white1;
+
 state.colorScheme = new ColorScheme(
 	{'colorSchemes':[{
-		'dialBgColor': variables.green2,
-		'btnColorClass': '--0',	
+		'dialBgColor': variables.blue4,
+		'btnColorClass': '--0',    //change	
 		'background': 'background--0',		
 	},
 	{				
-		'dialBgColor':variables.blue2,
+		'dialBgColor':variables.purple2,
 		'btnColorClass':'--1',			
 		'background': 'background--1',		
 	},
 	{				
-		'dialBgColor':variables.tan1,
+		'dialBgColor':variables.orange4,
 		'btnColorClass':'--2',		
 		'background': 'background--2',		
 	},
 	{				
-		'dialBgColor':variables.grey2,
+		'dialBgColor':variables.green4,
 		'btnColorClass':'--3',		
 		'background': 'background--3',		
 	},		
 	{
-		'dialBgColor': variables.green2,
-		'btnColorClass': '--0',	
-		'background': 'background--0',		
+		'dialBgColor': variables.green4,
+		'btnColorClass': '--4',	
+		'background': 'background--4',		
 	},
 	],
-	'pageBreaks':[0,11,21,33,41],			
+	'pageBreaks':[0,3,5,7,9],			
 	}
 );
 
@@ -101,7 +102,7 @@ $(document).ready(function(){
 		$('.pathfinder').build({
 			'panels': panels,
 			'timing': timing,
-			'spacing': 400,
+			'spacing': 250,
 			'state': state,
 		});
 

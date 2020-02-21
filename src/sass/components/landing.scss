@@ -14,7 +14,7 @@ $width: 100%;
         transition: all .5s;
         width: 36.90rem;
         height: 36.90rem;
-        background-color: $color-green-1;
+        background-color: $color-blue-3;
 
         @include bph(1000){
             height: 0; 
@@ -288,7 +288,7 @@ $width: 100%;
         background-size: 100%;
         background-repeat: no-repeat;
         top: 0;
-
+        display: none;
         @include bph(950){
             width: 25.34rem;
             height: 25.34rem;
