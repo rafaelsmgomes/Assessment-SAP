@@ -44,29 +44,29 @@
     &--0{
 	    background-color: $color-blue-3;
 	    .likert__input:checked ~ .likert__label &{
-	    	background-color: $color-green-2;
-		    border: 0.10rem solid $color-green-2;
+	    	background-color: $color-blue-4;
+		    border: 0.10rem solid $color-blue-4;
 	    }
     }
 		&--1{
 	    background-color: $color-purple-1;
 	    .likert__input:checked ~ .likert__label &{
-	    	background-color: $color-blue-2;
-		    border: 0.10rem solid $color-blue-2;
+	    	background-color: $color-purple-2;
+		    border: 0.10rem solid $color-purple-2;
 	    }
     }  
 		&--2{
 	    background-color: $color-orange-3;
 	    .likert__input:checked ~ .likert__label &{
-	    	background-color: $color-mustard-1;
-		    border: 0.10rem solid $color-mustard-1;
+	    	background-color: $color-orange-4;
+		    border: 0.10rem solid $color-orange-4;
 	    }
     }  
 		&--3{
 	    background-color: $color-green-3;
 	    .likert__input:checked ~ .likert__label &{
-	    	background-color: $color-grey-3;
-		    border: 0.10rem solid $color-grey-3;
+	    	background-color: $color-green-4;
+		    border: 0.10rem solid $color-green-4;
 	    }
     }            
 	}

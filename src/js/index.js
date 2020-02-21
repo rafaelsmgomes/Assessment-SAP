@@ -27,29 +27,30 @@ const question_length = panels.length-2;
 const timing = variables.timing1;
 state.qLen = question_length;
 state.white = variables.white1;
+
 state.colorScheme = new ColorScheme(
 	{'colorSchemes':[{
-		'dialBgColor': variables.white1,
+		'dialBgColor': variables.blue4,
 		'btnColorClass': '--0',    //change	
 		'background': 'background--0',		
 	},
 	{				
-		'dialBgColor':variables.white1,
+		'dialBgColor':variables.purple2,
 		'btnColorClass':'--1',			
 		'background': 'background--1',		
 	},
 	{				
-		'dialBgColor':variables.white1,
+		'dialBgColor':variables.orange4,
 		'btnColorClass':'--2',		
 		'background': 'background--2',		
 	},
 	{				
-		'dialBgColor':variables.white1,
+		'dialBgColor':variables.green4,
 		'btnColorClass':'--3',		
 		'background': 'background--3',		
 	},		
 	{
-		'dialBgColor': variables.white1,
+		'dialBgColor': variables.green4,
 		'btnColorClass': '--4',	
 		'background': 'background--4',		
 	},
@@ -101,7 +102,7 @@ $(document).ready(function(){
 		$('.pathfinder').build({
 			'panels': panels,
 			'timing': timing,
-			'spacing': 400,
+			'spacing': 250,
 			'state': state,
 		});
 

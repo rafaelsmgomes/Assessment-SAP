@@ -51,29 +51,29 @@
 		&--0{
 			background-color: $color-blue-3;
 			.vertfc__input:checked ~ .vertfc__label &{
-				background-color: $color-green-2;
-	    	border: 0.10rem solid $color-green-2;
+				background-color: $color-blue-4;
+	    	border: 0.10rem solid $color-blue-4;
 			}       
 		}
 		&--1{
 			background-color: $color-purple-1;
 			.vertfc__input:checked ~ .vertfc__label &{
-				background-color: $color-blue-2;
-	    	border: 0.10rem solid $color-blue-2;
+				background-color: $color-purple-2;
+	    	border: 0.10rem solid $color-purple-2;
 			}       
 		}
 		&--2{
 			background-color: $color-orange-3;
 			.vertfc__input:checked ~ .vertfc__label &{
-				background-color: $color-tan-1;
-	    	border: 0.10rem solid $color-tan-1;
+				background-color: $color-orange-4;
+	    	border: 0.10rem solid $color-orange-4;
 			}       
 		}
 		&--3{
 			background-color: $color-green-3;
 			.vertfc__input:checked ~ .vertfc__label &{
-				background-color: $color-grey-3;
-	    	border: 0.10rem solid $color-grey-3;
+				background-color: $color-green-4;
+	    	border: 0.10rem solid $color-green-4;
 			}       
 		}
 

@@ -1,17 +1,20 @@
 :export {
   white1: #fff;
   orange1: #ae562c;
+  orange4: #bc3618;
   brown1: #282623;
   brown2: #56504b;
+  purple2: #45157e;
   green1: #759C6C;
   green2: #2B6242;
+  green4: #0f4b3c;
   blue1: #2B6242;
   blue2: #759C6C;
   red1: #41817E;
   tan1: #2C5967;
   grey1: #2C5967;
   grey2: #67605b;
-  timing1: 1500; }
+  timing1: 1250; }
 
 @keyframes stroke {
   to {
@@ -234,6 +237,7 @@
 .btn__pdf {
   display: flex;
   width: fit-content;
+  padding-left: 1.7rem;
   background-color: #008FD3;
   margin: 0 auto;
   margin-top: 0.75rem;
@@ -386,23 +390,23 @@
   .checkbox__button--0 {
     background-color: #008FD3; }
     .checkbox__input:checked ~ .checkbox__label .checkbox__button--0 {
-      background-color: #2B6242;
-      border: 0.1rem solid #2B6242; }
+      background-color: #003283;
+      border: 0.1rem solid #003283; }
   .checkbox__button--1 {
     background-color: #970A82; }
     .checkbox__input:checked ~ .checkbox__label .checkbox__button--1 {
-      background-color: #759C6C;
-      border: 0.1rem solid #759C6C; }
+      background-color: #45157e;
+      border: 0.1rem solid #45157e; }
   .checkbox__button--2 {
     background-color: #E35500; }
     .checkbox__input:checked ~ .checkbox__label .checkbox__button--2 {
-      background-color: #2C5967;
-      border: 0.1rem solid #2C5967; }
+      background-color: #bc3618;
+      border: 0.1rem solid #bc3618; }
   .checkbox__button--3 {
     background-color: #4fb81c; }
     .checkbox__input:checked ~ .checkbox__label .checkbox__button--3 {
-      background-color: #94AFAF;
-      border: 0.1rem solid #94AFAF; }
+      background-color: #0f4b3c;
+      border: 0.1rem solid #0f4b3c; }
 
 .checkbox__form {
   display: flex;
@@ -765,7 +769,8 @@
     margin-right: 0.40rem;
     margin-left: 0.40rem;
     color: #fff;
-    font-family: SAPReg, Arial, Helvetica, sans-serif; }
+    font-family: SAPReg, Arial, Helvetica, sans-serif;
+    pointer-events: none; }
 
 .header__wrapper {
   display: flex;
@@ -1230,23 +1235,23 @@
   .likert__button--0 {
     background-color: #008FD3; }
     .likert__input:checked ~ .likert__label .likert__button--0 {
-      background-color: #2B6242;
-      border: 0.1rem solid #2B6242; }
+      background-color: #003283;
+      border: 0.1rem solid #003283; }
   .likert__button--1 {
     background-color: #970A82; }
     .likert__input:checked ~ .likert__label .likert__button--1 {
-      background-color: #759C6C;
-      border: 0.1rem solid #759C6C; }
+      background-color: #45157e;
+      border: 0.1rem solid #45157e; }
   .likert__button--2 {
     background-color: #E35500; }
     .likert__input:checked ~ .likert__label .likert__button--2 {
-      background-color: #FACD62;
-      border: 0.1rem solid #FACD62; }
+      background-color: #bc3618;
+      border: 0.1rem solid #bc3618; }
   .likert__button--3 {
     background-color: #4fb81c; }
     .likert__input:checked ~ .likert__label .likert__button--3 {
-      background-color: #94AFAF;
-      border: 0.1rem solid #94AFAF; }
+      background-color: #0f4b3c;
+      border: 0.1rem solid #0f4b3c; }
 
 .likert__line {
   stroke-width: 2;
@@ -1392,8 +1397,7 @@
   .rangeslider--horizontal {
     width: 100%;
     height: 2.20rem;
-    background-color: #fff;
-    border: solid 0.1rem #fff;
+    background-color: #003283;
     overflow: hidden;
     cursor: pointer;
     margin-top: 0.65rem; }
@@ -1471,23 +1475,23 @@
   .vertfc__button--0 {
     background-color: #008FD3; }
     .vertfc__input:checked ~ .vertfc__label .vertfc__button--0 {
-      background-color: #2B6242;
-      border: 0.1rem solid #2B6242; }
+      background-color: #003283;
+      border: 0.1rem solid #003283; }
   .vertfc__button--1 {
     background-color: #970A82; }
     .vertfc__input:checked ~ .vertfc__label .vertfc__button--1 {
-      background-color: #759C6C;
-      border: 0.1rem solid #759C6C; }
+      background-color: #45157e;
+      border: 0.1rem solid #45157e; }
   .vertfc__button--2 {
     background-color: #E35500; }
     .vertfc__input:checked ~ .vertfc__label .vertfc__button--2 {
-      background-color: #2C5967;
-      border: 0.1rem solid #2C5967; }
+      background-color: #bc3618;
+      border: 0.1rem solid #bc3618; }
   .vertfc__button--3 {
     background-color: #4fb81c; }
     .vertfc__input:checked ~ .vertfc__label .vertfc__button--3 {
-      background-color: #94AFAF;
-      border: 0.1rem solid #94AFAF; }
+      background-color: #0f4b3c;
+      border: 0.1rem solid #0f4b3c; }
 
 .vertfc__checkmark {
   background-image: url(../assets/images/desktop/icon/icon-check-likert.svg);
