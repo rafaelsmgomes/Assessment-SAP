@@ -10,7 +10,7 @@ const app = express();
 
 dotenv.config({ path: './config.env'})
 
-const b2bRouter = require("./routes/b2bRoutes");
+const sapRouter = require("./routes/sapRoutes");
 
 // if(process.env.NODE_ENV === 'development'){
 //     app.use(morgan('dev'));
@@ -47,7 +47,7 @@ app.set('views', [path.join(__dirname, "bin_dev"), path.join(__dirname, "PDF")])
 
 
 // ROUTING
-app.use('/b2b', b2bRouter); 
+app.use('/sap', sapRouter); 
 
 
 app.all('*', (req, res, next) => {
