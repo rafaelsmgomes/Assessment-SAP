@@ -1,47 +1,16 @@
-const express     = require("express"),
-    bodyParser    = require("body-parser"),
-    mysql         = require("mysql"),
-    path          = require("path"),
-    cors          = require("cors"),
-    ejs           = require("ejs"),
-    dotenv        = require("dotenv"),
-    fs            = require("fs"); 
-const app = express();
+const mysql = require("mysql");
+const fs = require("fs");
 
-dotenv.config({ path: './config.env'})
+const sql = require('../database/b2b/b2bqueries');
 
-const sql = require('./database/queries');
-
-const PDFReactor = require('../PDFreactor/wrappers/nodejs/lib/PDFreactor');
+const PDFReactor = require('../../PDFreactor/wrappers/nodejs/lib/PDFreactor');
+// const pdfReactor = new PDFReactor("https://cloud.pdfreactor.com/service/rest");
 const pdfReactor = new PDFReactor("http://ec2-34-216-255-36.us-west-2.compute.amazonaws.com/service/rest");
-
-app.use(express.json()); 
-app.use(express.static(`${__dirname}/bin_dev`));
-app.use(express.static(`${__dirname}/PDF`));
-app.use(express.static(`${__dirname}`)); 
-app.use(bodyParser.urlencoded({ extended: true }));
-
-const whitelist = ['http://oracle.assessment-tools.com', 'https://oracle.assessment-tools.com', 'http://www.oracle.assessment-tools.com', 'https://www.oracle.assessment-tools.com'];
-const corsOptions = {
-    origin: function (origin, callback) {
-        if (whitelist.indexOf(origin) !== -1 || !origin) {
-            callback(null, true)
-        } else {
-            callback(new Error('Not allowed by CORS'))
-        }
-    },
-    // allowedHeaders: 'Content-type'
-}
-app.options('*', cors(corsOptions));
-app.use(cors(corsOptions));
-
-app.set('view engine', 'html');
-app.engine("html", require("ejs").renderFile);
-app.set('views', [path.join(__dirname, "bin_dev"), path.join(__dirname, "PDF")]);
 
 // ------------------------------------------------------------
 // SQL CONFIGURATION 
 // ------------------------------------------------------------
+
 const conn = mysql.createPool({
     connectionLimit: 100,
     host: "72.10.48.193",
@@ -50,22 +19,26 @@ const conn = mysql.createPool({
     database: process.env.DATABASE,
     multipleStatements: true 
 }); 
+
 // ------------------------------------------------------------
 // DECLARING GLOBAL VARIABLES
 // ------------------------------------------------------------
+
 let userArr = []; 
 let userID;
 let ansArr = []
+
 // ------------------------------------------------------------
 // FUNCTIONS
 // ------------------------------------------------------------
-const createHTMLversion = (req, res) => {
+
+exports.createHTMLversion = (req, res) => {
     res.render( 'cx-content' );
 }
-const renderTool = (req, res) => {
-    res.render('index'); 
+exports.renderTool = (req, res) => {
+    res.render('index');
 }
-const generateData = (req,res) => {
+exports.generateData = (req,res) => {
     console.log("----------------------------------------")
     const data      = req.body,
         likerts     = data.likerts, 
@@ -94,9 +67,6 @@ const generateData = (req,res) => {
         const results = createOverallResults();
         return results
     })
-    // .then(el => {
-    //     return ('done')
-    // })
     .then(() => {
         res.status(200).json({
             status: 'success',
@@ -110,7 +80,7 @@ const generateData = (req,res) => {
         console.log(err)
     });
 }
-const getOverallResults = (req, res) => {
+exports.getOverallResults = (req, res) => {
     let generatedID = req.params.id;
     conn.query(`SELECT * FROM results WHERE user_id = ?`, generatedID, (err, results) => {
         if (err) throw err;
@@ -120,12 +90,13 @@ const getOverallResults = (req, res) => {
         });
     })
 }
-const generatePDF = (req, res) => {
+exports.generatePDF = (req, res) => {
     id = req.params.id;    
     let result;
     const config = {
         // document: `https://oracle.assessment-tools.com/cx/maturity/htmlversion/${id}`,
-        document: `http://dev.assessment-tools.com/htmlversion/${id}`,
+        document: `http://cxmaturitymodels.com/b2b/htmlversion/${id}`,
+        // document: `http://localhost:3000/cx/maturity/htmlversion/${id}`,
         addLinks: true,
         pixelsPerInch:71,
         javaScriptSettings:{ enabled:true }
@@ -133,11 +104,11 @@ const generatePDF = (req, res) => {
     async function printPDF() {
         try{
             result = await pdfReactor.convert(config);
-            fs.writeFile(`./bin_dev/cxpdf${id}.pdf`, result.document, 'base64', function(err) {
+            fs.writeFile(`./bin_dev/b2bpdf${id}.pdf`, result.document, 'base64', function(err) {
                 if (err) {
                     console.log(err)
                 } else {
-                    fs.readFile(`./bin_dev/cxpdf${id}.pdf`, (err, data) => {
+                    fs.readFile(`./bin_dev/b2bpdf${id}.pdf`, (err, data) => {
                         res
                         .contentType('application/pdf')
                         .send(data);
@@ -150,12 +121,9 @@ const generatePDF = (req, res) => {
     }
     printPDF()
 }
-const sendDataToPDF = (req, res) => {
+exports.sendDataToPDF = (req, res) => {
     sqlID = req.params.id;
-    conn.query(`SELECT ans_value, question_id, ans_section FROM answers WHERE user_id = ? ORDER BY question_id ASC;
-                SELECT companyName, id FROM users WHERE id = ?;
-                SELECT BroadcastScore, ResponsiveScore, RelationshipScore, LifecycleScore FROM results WHERE user_id = ?
-                `, [sqlID, sqlID, sqlID], (err, results, fields) => {
+    conn.query(sql.sendDataToPDF, [sqlID, sqlID, sqlID], (err, results) => {
                 // 1579900475098 
         if (err) throw err; 
         console.log(results);
@@ -211,17 +179,6 @@ const sendDataToPDF = (req, res) => {
         res.json({data: pdfData});
     })    
 }
-// ------------------------------------------------------------
-// ROUTES
-// ------------------------------------------------------------
-const cxRouter = express.Router();
-app.use('/cx/maturity', cxRouter);
-cxRouter.get('/', renderTool);
-cxRouter.get('/htmlversion/:id', createHTMLversion);
-cxRouter.post('/api', generateData); 
-cxRouter.get('/api2/:id', getOverallResults);
-cxRouter.get('/pdfdata/:id', sendDataToPDF);
-cxRouter.get('/pdf/:id', generatePDF);
 
 
 // ------------------------------------------------------------
@@ -280,6 +237,8 @@ function createOverallResults () {
     }) 
 };
 
-app.listen(process.env.PORT || 3000, process.env.IP, () => {
-    console.log("Customer Experience Assessment Tool is online")
-});
+
+
+
+
+
