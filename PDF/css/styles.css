@@ -53,7 +53,7 @@ section {
     width: 792px;
     background-image: url(../assets/strip_7.png);
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: bottom left;
     background-size:  792px 16px;
         margin-bottom: 30px;
     border: solid 1px;
@@ -116,7 +116,7 @@ h3{
  font-family: "BentonSans-Light", Arial, sans-serif;
   font-size : 36px;
   line-height : 24px;
-  color : #94AFAF;
+  color : #000000;
   font-weight: normal;
   margin-top: 45px;
   margin-bottom: 25px;
@@ -126,16 +126,16 @@ h3.h3-para-spacing{
     margin-bottom: 9px;
 }
 .broadcast h3{
-    color:#759C6C;
+    color:#008FD3;
 }
 .responsive h3{
-    color: #2B6242;
+    color: #970A82;
 }
 .relationship h3{
-    color: #41817E;
+    color: #E35500;
 }
 .lifecycle h3{
-    color:#2C5967;
+    color:#4FB81C;
 }
 h4{
     font-family: BentonSans-Light,Arial,sans-serif;
@@ -154,16 +154,16 @@ h5{
     margin-bottom: 12px
 }
 .broadcast h5{
-    color:#759C6C;
+    color:#008FD3;
 }
 .responsive h5{
-    color:#2B6242;
+    color:#970A82;
 }
 .relationship h5{
-    color: #41817E;
+    color: #E35500;
 }
 .lifecycle h5{
-    color:#2C5967;
+    color:#4FB81C;
 }
 
 a[href] { 
@@ -189,7 +189,10 @@ a[id] {
  * Page Layout
  ****************************************************/
 .racetrack{
-   display: none;
+   width: 34px;
+    height: 16px;
+    margin-top: 10px;
+    margin-left: 30px;
 }
 .logo{
  margin-top: 64px;
@@ -198,8 +201,8 @@ a[id] {
 }
 #page1{
     color:white;
-    background-size: cover;
-    background-image: url(../assets/1x/Asset_1.png);
+    background-color: #000000;
+
 
 }
 #page1 .section-inner{
@@ -231,7 +234,7 @@ a[id] {
     
 }
 .green-button{
-    background-color: #2B6242
+    background-color: #008FD3;
 }
 .three-col-layout{
     width: 100%;
@@ -297,19 +300,19 @@ a[id] {
     bottom:30px;
 }
 #overall-cloud .cloud-bg{
-    background-image: url(../assets/clouds/cloud-fog.png);
+    background-image: url(../assets/clouds/cloud-exec-summary.png);
 }
 #broadcast-cloud .cloud-bg{
-    background-image: url(../assets/clouds/cloud-ivy.png);
+    background-image: url(../assets/clouds/cloud-blue.png);
 }
 #responsive-cloud .cloud-bg{
-    background-image: url(../assets/clouds/cloud-forest.png);
+    background-image: url(../assets/clouds/clou-purple.png);
 }
 #relationship-cloud .cloud-bg{
-    background-image: url(../assets/clouds/cloud-surf.png);
+    background-image: url(../assets/clouds/cloud-orange.png);
 }
 #lifecycle-cloud .cloud-bg{
-      background-image: url(../assets/clouds/cloud-ocean.png);
+      background-image: url(../assets/clouds/cloud-green.png);
 }
 .cloud-outline{
     width: 221px;
@@ -353,10 +356,10 @@ a[id] {
     width: 163px;
 }
 #overall-cloud{
-       background-color: rgba(148,175,175, 0.1); 
+       background-color: rgba(240,171,0, 0.1); 
 }
 #spider-col{
-    background-color: rgba(148,175,175, 0.1);
+    background-color: rgba(240,171,0, 0.1);
           height: 613px;
 }
 .spider-chart-holder{
@@ -447,7 +450,7 @@ a[id] {
     color:#ffffff;
 }
 .checkmark{
-    width: 11px;
+    width: 13px;
     height:9px;
     margin-left: 15px;
     display: inline-block;
@@ -469,7 +472,7 @@ a[id] {
 .reccomendations_text{
     font-size: 14px;
     line-height: 18px;
-    color:#2B6242;
+    color:#970A82;
     padding-right: 10px;
 }
 
@@ -536,16 +539,16 @@ a[id] {
     float:right;
 }
 .broadcast .reccomendations_text{
-    color:  #759C6C;
+    color:  #008FD3;
 }
 .responsive .reccomendations_text{
-    color:  #2B6242;
+    color:  #970A82;
 }
 .relationship .reccomendations_text{
-    color: #41817E;
+    color: #E35500;
 }
 .lifecycle .reccomendations_text{
-    color: #2C5967;
+    color: #4FB81C;
 }
 .icon-automation{
     background-image: url('../assets/icons/icon-automation.png');
@@ -674,7 +677,7 @@ a[id] {
 }
 
 .bottom-image, .b-image{
-    background-image: url(../assets/1x/bg_ivy.png);
+    background-color: #008FD3;
     background-position: bottom;
     background-repeat: no-repeat;
     position: absolute;
@@ -687,7 +690,7 @@ a[id] {
         padding: 15px 30px
 }
 .responsive .bottom-image{
-    background-image: url(../assets/1x/bg-forest.png);   
+    background-color: #970A82;   
 }
 .relationship .bottom-image{
     background-image: url(../assets/1x/bg-surf.png);
@@ -743,20 +746,20 @@ a[id] {
 
 
 #broadcast-col-content .action-item{
-    background-image: url(../assets/1x/broadcast-check.png)
+    background-image: url(../assets/1x/checkmark-blue.png)
 }
 #responsive-col-content .action-item{
-    background-image: url(../assets/1x/forest-check.png)
+    background-image: url(../assets/1x/checkmark-purple.png)
 }
 #relationship-col-content .action-item{
-    background-image: url(../assets/1x/surf-check.png)
+    background-image: url(../assets/1x/checkmark-orange.png)
 }
 #lifecycle-col-content .action-item{
-    background-image: url(../assets/1x/ocean-check.png)
+    background-image: url(../assets/1x/checkmark-green.png)
 }
 .action-item{
     width: 100%;
-    background-size: 16px 16px;
+    background-size: 13px 10px;
     background-position: top left;
     background-repeat: no-repeat;
     font-size: 10px;
@@ -775,19 +778,19 @@ a[id] {
     display: inline-block
 }
 #broadcast-col .col-title{
-    color:#759C6C;
+    color:#008FD3;
 }
 #responsive-col .col-title{
-    color:#2B6242;
+    color:#970A82;
 }
 #relationship-col .col-title{
-    color:#41817E; 
+    color:#E35500; 
 }
 #lifecycle-col{
     width: 199px;
 }
 #lifecycle-col .col-title{
-    color:#2C5967;
+    color:#4FB81C;
 }
 /** new backgrounds**/
     
@@ -835,8 +838,8 @@ a[id] {
 }
 .cta{
     width: 668px;
-    height: 137px;
-    background-color: #2C5967;
+    height: 107px;
+    background-color:rgba(127,127,127,.3);
     border-radius: 12px;
 }
 .cta p{
