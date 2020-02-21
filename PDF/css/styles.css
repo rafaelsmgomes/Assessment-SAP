@@ -3,18 +3,18 @@
  ****************************************************/
 
 @font-face {
-    font-family: OracleSans;
-    src: url(../fonts/OracleSans_Rg.ttf)
+    font-family: BentonSans;
+    src: url(../fonts/BentonSans-Book.otf)
 
 }
 @font-face {
-    font-family: OracleSans-Bold;
-    src: url(../fonts/OracleSans_Bd.ttf)
+    font-family: BentonSans-Bold;
+    src: url(../fonts/BentonSans-Bold.otf)
 
 }
 @font-face {
-    font-family: OracleSans-Light;
-    src: url(../fonts/OracleSans_Lt.ttf)
+    font-family: BentonSans-Light;
+    src: url(../fonts/BentonSans-Light.otf)
 
 }
 
@@ -53,7 +53,7 @@ section {
     width: 792px;
     background-image: url(../assets/strip_7.png);
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: bottom left;
     background-size:  792px 16px;
         margin-bottom: 30px;
     border: solid 1px;
@@ -69,14 +69,14 @@ section {
  ****************************************************/
 
 html, body {
-    font-family: OracleSans, sans-serif;
+    font-family: BentonSans, sans-serif;
     margin: 0;
     padding: 0;
     hyphens: none;
 }
 
 strong{
-    font-family: "OracleSans-Bold",Arial, sans-serif;
+    font-family: "BentonSans-Bold",Arial, sans-serif;
     font-weight: normal;
 }
 
@@ -92,19 +92,24 @@ p, li, td {
   font-size : 10px;
   line-height : 17px;
   letter-spacing : 0.1px;
-  color : #312D2A;
+  color : #000000;
     margin-bottom: 17px;
 }
 
 :-ro-matches(p, h1, h2, h3) + p {
     margin-top: 2mm;
 }
-
+.footer{
+    position: absolute;
+    bottom:3px;
+    left:30px;
+    font-size: 8px;
+}
 
 h1 {
-    font-family: Georgia;
-    font-weight: normal;
-    font-size: 59px;
+    font-family: "BentonSans",Arial, sans-serif;
+    font-weight: bold;
+    font-size: 57px;
     line-height: 59px;
     letter-spacing: 0.5mm;
     margin: 0;
@@ -113,10 +118,10 @@ h1 {
 }
 
 h3{
- font-family: "OracleSans-Light", Arial, sans-serif;
+ font-family: "BentonSans-Light", Arial, sans-serif;
   font-size : 36px;
   line-height : 24px;
-  color : #94AFAF;
+  color : #000000;
   font-weight: normal;
   margin-top: 45px;
   margin-bottom: 25px;
@@ -126,19 +131,19 @@ h3.h3-para-spacing{
     margin-bottom: 9px;
 }
 .broadcast h3{
-    color:#759C6C;
+    color:#008FD3;
 }
 .responsive h3{
-    color: #2B6242;
+    color: #970A82;
 }
 .relationship h3{
-    color: #41817E;
+    color: #E35500;
 }
 .lifecycle h3{
-    color:#2C5967;
+    color:#4FB81C;
 }
 h4{
-    font-family: OracleSans-Light,Arial,sans-serif;
+    font-family: BentonSans-Light,Arial,sans-serif;
     color: #ffffff;
     font-size: 16px;
     line-height: 21px;
@@ -154,16 +159,16 @@ h5{
     margin-bottom: 12px
 }
 .broadcast h5{
-    color:#759C6C;
+    color:#008FD3;
 }
 .responsive h5{
-    color:#2B6242;
+    color:#970A82;
 }
 .relationship h5{
-    color: #41817E;
+    color: #E35500;
 }
 .lifecycle h5{
-    color:#2C5967;
+    color:#4FB81C;
 }
 
 a[href] { 
@@ -189,12 +194,11 @@ a[id] {
  * Page Layout
  ****************************************************/
 .racetrack{
+   width: 34px;
+    height: 16px;
+    top: 10px;
+    left: 30px;
     position: absolute;
-    bottom:0;
-    right:42px;
-    height: 42px;
-    width: 42px;
-    
 }
 .logo{
  margin-top: 64px;
@@ -203,8 +207,8 @@ a[id] {
 }
 #page1{
     color:white;
-    background-size: cover;
-    background-image: url(../assets/1x/Asset_1.png);
+    background-color: #000000;
+
 
 }
 #page1 .section-inner{
@@ -236,7 +240,7 @@ a[id] {
     
 }
 .green-button{
-    background-color: #2B6242
+    background-color: #008FD3;
 }
 .three-col-layout{
     width: 100%;
@@ -302,19 +306,19 @@ a[id] {
     bottom:30px;
 }
 #overall-cloud .cloud-bg{
-    background-image: url(../assets/clouds/cloud-fog.png);
+    background-image: url(../assets/clouds/cloud-exec-summary.png);
 }
 #broadcast-cloud .cloud-bg{
-    background-image: url(../assets/clouds/cloud-ivy.png);
+    background-image: url(../assets/clouds/cloud-blue.png);
 }
 #responsive-cloud .cloud-bg{
-    background-image: url(../assets/clouds/cloud-forest.png);
+    background-image: url(../assets/clouds/clou-purple.png);
 }
 #relationship-cloud .cloud-bg{
-    background-image: url(../assets/clouds/cloud-surf.png);
+    background-image: url(../assets/clouds/cloud-orange.png);
 }
 #lifecycle-cloud .cloud-bg{
-      background-image: url(../assets/clouds/cloud-ocean.png);
+      background-image: url(../assets/clouds/cloud-green.png);
 }
 .cloud-outline{
     width: 221px;
@@ -349,7 +353,7 @@ a[id] {
     top: -74px;
     width: 151px;
     text-align: right;
-    font-family: OracleSans-Bold;
+    font-family: BentonSans-Bold;
     border-bottom: 2px solid #312D2A;
 }
 .internal-cloud .cloud-score{
@@ -358,11 +362,12 @@ a[id] {
     width: 163px;
 }
 #overall-cloud{
-       background-color: rgba(148,175,175, 0.1); 
+       background-color: rgba(240,171,0, 0.1); 
 }
 #spider-col{
-    background-color: rgba(148,175,175, 0.1);
+    background-color: rgba(240,171,0, 0.1);
           height: 613px;
+        margin-top: -30px;
 }
 .spider-chart-holder{
         position: absolute;
@@ -409,7 +414,7 @@ a[id] {
 }
 .driver{
     font-size:12px;
-    font-family: OracleSans-Bold;
+    font-family: BentonSans-Bold;
     border-bottom: 1px solid #ffffff;
     padding-bottom: 5px;
     margin-bottom: 5px;
@@ -447,12 +452,12 @@ a[id] {
     background-image: url(../assets/1x/icon-drivers.png);
 }
 .driver-text{
-    font-family: OracleSans;
+    font-family: BentonSans;
     font-size: 12px;
     color:#ffffff;
 }
 .checkmark{
-    width: 11px;
+    width: 13px;
     height:9px;
     margin-left: 15px;
     display: inline-block;
@@ -474,7 +479,7 @@ a[id] {
 .reccomendations_text{
     font-size: 14px;
     line-height: 18px;
-    color:#2B6242;
+    color:#970A82;
     padding-right: 10px;
 }
 
@@ -486,7 +491,7 @@ a[id] {
 }
 .recommendation_title{
     font-size: 12px;
-    font-family: OracleSans-Bold;
+    font-family: BentonSans-Bold;
     color:#67605B;
     margin-bottom: 4px;
     
@@ -541,16 +546,16 @@ a[id] {
     float:right;
 }
 .broadcast .reccomendations_text{
-    color:  #759C6C;
+    color:  #008FD3;
 }
 .responsive .reccomendations_text{
-    color:  #2B6242;
+    color:  #970A82;
 }
 .relationship .reccomendations_text{
-    color: #41817E;
+    color: #E35500;
 }
 .lifecycle .reccomendations_text{
-    color: #2C5967;
+    color: #4FB81C;
 }
 .icon-automation{
     background-image: url('../assets/icons/icon-automation.png');
@@ -679,7 +684,7 @@ a[id] {
 }
 
 .bottom-image, .b-image{
-    background-image: url(../assets/1x/bg_ivy.png);
+    background-color: #008FD3;
     background-position: bottom;
     background-repeat: no-repeat;
     position: absolute;
@@ -692,13 +697,13 @@ a[id] {
         padding: 15px 30px
 }
 .responsive .bottom-image{
-    background-image: url(../assets/1x/bg-forest.png);   
+    background-color: #970A82;   
 }
 .relationship .bottom-image{
-    background-image: url(../assets/1x/bg-surf.png);
+    background-color: #E35500 ;
 }
 .lifecycle .bottom-image{
-    background-image: url(../assets/1x/bg-ocean.png);
+    background-color: #4FB81C;
 }
 .action_list_title{
     font-size: 14px;
@@ -740,7 +745,7 @@ a[id] {
     width: 162px;
 }
 .col-title{
-    font-family: Oracle-Sans-Bold,Arial,sans-serif;
+    font-family: BentonSans-Bold,Arial,sans-serif;
     font-weight: bold;
     font-size: 12px;
     margin-bottom: 5px;
@@ -748,20 +753,20 @@ a[id] {
 
 
 #broadcast-col-content .action-item{
-    background-image: url(../assets/1x/broadcast-check.png)
+    background-image: url(../assets/1x/checkmark-blue.png)
 }
 #responsive-col-content .action-item{
-    background-image: url(../assets/1x/forest-check.png)
+    background-image: url(../assets/1x/checkmark-purple.png)
 }
 #relationship-col-content .action-item{
-    background-image: url(../assets/1x/surf-check.png)
+    background-image: url(../assets/1x/checkmark-orange.png)
 }
 #lifecycle-col-content .action-item{
-    background-image: url(../assets/1x/ocean-check.png)
+    background-image: url(../assets/1x/checkmark-green.png)
 }
 .action-item{
     width: 100%;
-    background-size: 16px 16px;
+    background-size: 13px 10px;
     background-position: top left;
     background-repeat: no-repeat;
     font-size: 10px;
@@ -780,19 +785,19 @@ a[id] {
     display: inline-block
 }
 #broadcast-col .col-title{
-    color:#759C6C;
+    color:#008FD3;
 }
 #responsive-col .col-title{
-    color:#2B6242;
+    color:#970A82;
 }
 #relationship-col .col-title{
-    color:#41817E; 
+    color:#E35500; 
 }
 #lifecycle-col{
     width: 199px;
 }
 #lifecycle-col .col-title{
-    color:#2C5967;
+    color:#4FB81C;
 }
 /** new backgrounds**/
     
@@ -840,8 +845,8 @@ a[id] {
 }
 .cta{
     width: 668px;
-    height: 137px;
-    background-color: #2C5967;
+    height: 107px;
+    background-color:rgba(127,127,127,.3);
     border-radius: 12px;
 }
 .cta p{
