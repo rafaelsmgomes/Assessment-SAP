@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const sql = require('../database/b2b/b2bqueries');
 
-const PDFReactor = require('../../PDFreactor/wrappers/nodejs/lib/PDFreactor');
+const PDFReactor = require('../PDFreactor');
 // const pdfReactor = new PDFReactor("https://cloud.pdfreactor.com/service/rest");
 const pdfReactor = new PDFReactor("http://ec2-34-216-255-36.us-west-2.compute.amazonaws.com/service/rest");
 
