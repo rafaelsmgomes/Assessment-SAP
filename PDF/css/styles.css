@@ -51,7 +51,7 @@
 section {
     height: 612px;
     width: 792px;
-    background-image: url(../assets/strip_7.png);
+    background-image: url(../assetsPDF/strip_7.png);
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size:  792px 16px;
@@ -306,19 +306,19 @@ a[id] {
     bottom:30px;
 }
 #overall-cloud .cloud-bg{
-    background-image: url(../assets/clouds/cloud-exec-summary.png);
+    background-image: url(../assetsPDF/clouds/cloud-exec-summary.png);
 }
 #broadcast-cloud .cloud-bg{
-    background-image: url(../assets/clouds/cloud-blue.png);
+    background-image: url(../assetsPDF/clouds/cloud-blue.png);
 }
 #responsive-cloud .cloud-bg{
-    background-image: url(../assets/clouds/clou-purple.png);
+    background-image: url(../assetsPDF/clouds/clou-purple.png);
 }
 #relationship-cloud .cloud-bg{
-    background-image: url(../assets/clouds/cloud-orange.png);
+    background-image: url(../assetsPDF/clouds/cloud-orange.png);
 }
 #lifecycle-cloud .cloud-bg{
-      background-image: url(../assets/clouds/cloud-green.png);
+      background-image: url(../assetsPDF/clouds/cloud-green.png);
 }
 .cloud-outline{
     width: 221px;
@@ -326,7 +326,7 @@ a[id] {
     left:40px;
     bottom: 75px;
     position: absolute;
-    background-image: url(../assets/clouds/cloud-outline.png)
+    background-image: url(../assetsPDF/clouds/cloud-outline.png)
 }
 .internal-cloud .cloud-outline{
     bottom:30px;
@@ -374,7 +374,7 @@ a[id] {
         top: 314px;
     width: 100%;
     height: 300px;
-    background-image: url(../assets/2x/spider-key.png);
+    background-image: url(../assetsPDF/2x/spider-key.png);
     background-repeat: no-repeat;
         background-size: 157px 16px;
     background-position: center 205px;
@@ -427,7 +427,7 @@ a[id] {
     margin-bottom: -2px;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../assets/1x/arrow-up.png);
+    background-image: url(../assetsPDF/1x/arrow-up.png);
     background-size: contain;
 }
 .arrow-down{
@@ -438,7 +438,7 @@ a[id] {
     margin-bottom: -2px;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../assets/1x/arrow-down.png);
+    background-image: url(../assetsPDF/1x/arrow-down.png);
      background-size: contain;
 }
 .icon-driver{
@@ -449,7 +449,7 @@ a[id] {
     margin-bottom: -2px;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../assets/1x/icon-drivers.png);
+    background-image: url(../assetsPDF/1x/icon-drivers.png);
 }
 .driver-text{
     font-family: BentonSans;
@@ -461,7 +461,7 @@ a[id] {
     height:9px;
     margin-left: 15px;
     display: inline-block;
-    background-image: url(../assets/1x/checkmark.png);
+    background-image: url(../assetsPDF/1x/checkmark.png);
      background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -471,7 +471,7 @@ a[id] {
     /* No page counter for first page */
     counter-increment: page 0;
     /* Set the gradient on the page background */
-    background-image: url(../assets/1x/Asset_1.png);
+    background-image: url(../assetsPDF/1x/Asset_1.png);
 
 }
 
@@ -558,121 +558,121 @@ a[id] {
     color: #4FB81C;
 }
 .icon-automation{
-    background-image: url('../assets/icons/icon-automation.png');
+    background-image: url('../assetsPDF/icons/icon-automation.png');
 }
 .icon-blueprints{
-    background-image: url('../assets/icons/icon-blueprints.png'); 
+    background-image: url('../assetsPDF/icons/icon-blueprints.png'); 
 }
 .icon-bnb{
-    background-image: url('../assets/icons/icon-bnb.png'); 
+    background-image: url('../assetsPDF/icons/icon-bnb.png'); 
 }
 .icon-channel{
-    background-image: url('../assets/icons/icon-channels.png'); 
+    background-image: url('../assetsPDF/icons/icon-channels.png'); 
 }
 .icon-CRM{
-    background-image: url('../assets/icons/icon-CRM.png'); 
+    background-image: url('../assetsPDF/icons/icon-CRM.png'); 
 }
 .icon-multichannel{
-    background-image: url('../assets/icons/icon-multichannel.png'); 
+    background-image: url('../assetsPDF/icons/icon-multichannel.png'); 
 }
 .icon-campaign-automation{
-    background-image: url('../assets/icons/icon-campaign-automation.png'); 
+    background-image: url('../assetsPDF/icons/icon-campaign-automation.png'); 
 }
 .icon-nurture{
-    background-image: url('../assets/icons/icon-nurture.png'); 
+    background-image: url('../assetsPDF/icons/icon-nurture.png'); 
 }
 .icon-adaptive{
-    background-image: url('../assets/icons/icon-adaptive.png'); 
+    background-image: url('../assetsPDF/icons/icon-adaptive.png'); 
 }
 .icon-basic{
-    background-image: url('../assets/icons/icon-basic.png'); 
+    background-image: url('../assetsPDF/icons/icon-basic.png'); 
 }
 .icon-personalization{
-    background-image: url('../assets/icons/icon-personalization.png'); 
+    background-image: url('../assetsPDF/icons/icon-personalization.png'); 
 }
 .icon-segmentation{
-    background-image: url('../assets/icons/icon-segmentation.png'); 
+    background-image: url('../assetsPDF/icons/icon-segmentation.png'); 
 }
 .icon-behavioral{
-    background-image: url('../assets/icons/icon-behavioral.png'); 
+    background-image: url('../assetsPDF/icons/icon-behavioral.png'); 
 }
 .icon-ab{
-    background-image: url('../assets/icons/icon-ab.png'); 
+    background-image: url('../assetsPDF/icons/icon-ab.png'); 
 }
 .icon-testing{
-    background-image: url('../assets/icons/icon-testing.png'); 
+    background-image: url('../assetsPDF/icons/icon-testing.png'); 
 }
 .icon-advanced{
-    background-image: url('../assets/icons/icon-advanced.png'); 
+    background-image: url('../assetsPDF/icons/icon-advanced.png'); 
 }
 .icon-account{
-    background-image: url('../assets/icons/icon-account.png'); 
+    background-image: url('../assetsPDF/icons/icon-account.png'); 
 }
 .icon-cross{
-    background-image: url('../assets/icons/icon-cross.png'); 
+    background-image: url('../assetsPDF/icons/icon-cross.png'); 
 }
 .icon-personalization{
-    background-image: url('../assets/icons/icon-personalization.png'); 
+    background-image: url('../assetsPDF/icons/icon-personalization.png'); 
 }
 .icon-intelligence{
-    background-image: url('../assets/icons/icon-intelligence.png'); 
+    background-image: url('../assetsPDF/icons/icon-intelligence.png'); 
 }
 .icon-intelligent{
-    background-image: url('../assets/icons/icon-intelligent.png'); 
+    background-image: url('../assetsPDF/icons/icon-intelligent.png'); 
 }
 .icon-send{
-    background-image: url('../assets/icons/icon-send.png'); 
+    background-image: url('../assetsPDF/icons/icon-send.png'); 
 }
 .icon-real{
-    background-image: url('../assets/icons/icon-real.png'); 
+    background-image: url('../assetsPDF/icons/icon-real.png'); 
 }
 .icon-predictive{
-    background-image: url('../assets/icons/icon-predictive.png'); 
+    background-image: url('../assetsPDF/icons/icon-predictive.png'); 
 }
 .icon-marketing{
-    background-image: url('../assets/icons/icon-marketing.png'); 
+    background-image: url('../assetsPDF/icons/icon-marketing.png'); 
 }
 .icon-measurement{
-    background-image: url('../assets/icons/icon-measurement.png'); 
+    background-image: url('../assetsPDF/icons/icon-measurement.png'); 
 }
 .icon-unified{
-    background-image: url('../assets/icons/icon-unified.png'); 
+    background-image: url('../assetsPDF/icons/icon-unified.png'); 
 }
 .icon-advanced-person{
-    background-image: url('../assets/icons/icon-advanced-person.png'); 
+    background-image: url('../assetsPDF/icons/icon-advanced-person.png'); 
 }
 .icon-bib{
-    background-image: url('../assets/icons/icon-bib.png'); 
+    background-image: url('../assetsPDF/icons/icon-bib.png'); 
 }
 .icon-loyalty{
-    background-image: url('../assets/icons/icon-loyalty.png'); 
+    background-image: url('../assetsPDF/icons/icon-loyalty.png'); 
 }
 .icon-service{
-    background-image: url('../assets/icons/icon-service.png'); 
+    background-image: url('../assetsPDF/icons/icon-service.png'); 
 }
 .icon-empowered{
-    background-image: url('../assets/icons/icon-empowered.png'); 
+    background-image: url('../assetsPDF/icons/icon-empowered.png'); 
 }
 .icon-sales{
-    background-image: url('../assets/icons/icon-sales.png'); 
+    background-image: url('../assetsPDF/icons/icon-sales.png'); 
 }
 .icon-aware{
-    background-image: url('../assets/icons/icon-aware.png'); 
+    background-image: url('../assetsPDF/icons/icon-aware.png'); 
 }
 .icon-lifetime{
-    background-image: url('../assets/icons/icon-lifetime.png'); 
+    background-image: url('../assetsPDF/icons/icon-lifetime.png'); 
 }
 .icon-m-data{
-    background-image: url('../assets/icons/icon-m-data.png'); 
+    background-image: url('../assetsPDF/icons/icon-m-data.png'); 
 }
 .icon-insight{
-    background-image: url('../assets/icons/icon-insight.png'); 
+    background-image: url('../assetsPDF/icons/icon-insight.png'); 
 }
 .icon-target{
-    background-image: url('../assets/icons/icon-target.png'); 
+    background-image: url('../assetsPDF/icons/icon-target.png'); 
 }
 .icon-congrats{
-    background-image: url('../assets/icons/icon-congrats.png'); 
+    background-image: url('../assetsPDF/icons/icon-congrats.png'); 
 }
 .reccomendation.icon-congrats p{
     margin-top: 0;
@@ -753,16 +753,16 @@ a[id] {
 
 
 #broadcast-col-content .action-item{
-    background-image: url(../assets/1x/checkmark-blue.png)
+    background-image: url(../assetsPDF/1x/checkmark-blue.png)
 }
 #responsive-col-content .action-item{
-    background-image: url(../assets/1x/checkmark-purple.png)
+    background-image: url(../assetsPDF/1x/checkmark-purple.png)
 }
 #relationship-col-content .action-item{
-    background-image: url(../assets/1x/checkmark-orange.png)
+    background-image: url(../assetsPDF/1x/checkmark-orange.png)
 }
 #lifecycle-col-content .action-item{
-    background-image: url(../assets/1x/checkmark-green.png)
+    background-image: url(../assetsPDF/1x/checkmark-green.png)
 }
 .action-item{
     width: 100%;
@@ -803,39 +803,39 @@ a[id] {
     
     
 #broadcast-page-3, #broadcast-p3 {
-    background-image: url(../assets/1x/img-rec-01.png);
+    background-image: url(../assetsPDF/1x/img-rec-01.png);
     background-size: 792px 612px;
 }
 #broadcast-page-4,#broadcast-p4 {
-    background-image: url(../assets/1x/img-mktg-01.png);
+    background-image: url(../assetsPDF/1x/img-mktg-01.png);
     background-size: 792px 612px;
 }
 #responsive-page-2,#responsive-page-3{
-       background-image: url(../assets/1x/img-rec-02.png);
+       background-image: url(../assetsPDF/1x/img-rec-02.png);
     background-size: 792px 612px; 
 }
 #responsive-page-4,#responsive-page-5{
-       background-image: url(../assets/1x/img-mktg-02.png);
+       background-image: url(../assetsPDF/1x/img-mktg-02.png);
     background-size: 792px 612px; 
 }
 #relationship-page-2,#relationship-page-3{
-       background-image: url(../assets/1x/img-rec-03.png);
+       background-image: url(../assetsPDF/1x/img-rec-03.png);
     background-size: 792px 612px; 
 }
 #relationship-page-4,#relationship-page-5{
-       background-image: url(../assets/1x/img-mktg-03.png);
+       background-image: url(../assetsPDF/1x/img-mktg-03.png);
     background-size: 792px 612px; 
 }
 #relationship-page-2,#relationship-page-3{
-       background-image: url(../assets/1x/img-rec-03.png);
+       background-image: url(../assetsPDF/1x/img-rec-03.png);
     background-size: 792px 612px; 
 }
 #relationship-page-4,#relationship-page-5{
-       background-image: url(../assets/1x/img-mktg-03.png);
+       background-image: url(../assetsPDF/1x/img-mktg-03.png);
     background-size: 792px 612px; 
 }
 #lifecycle-page-4, #lifecycle-page-5{
-          background-image: url(../assets/1x/img-mktg-04-new.png);
+          background-image: url(../assetsPDF/1x/img-mktg-04-new.png);
     background-size: 792px 612px
 }
 
