@@ -29,27 +29,27 @@ state.qLen = question_length;
 state.white = variables.white1;
 state.colorScheme = new ColorScheme(
 	{'colorSchemes':[{
-		'dialBgColor': variables.green2,
+		'dialBgColor': variables.white1,
 		'btnColorClass': '--0',    //change	
 		'background': 'background--0',		
 	},
 	{				
-		'dialBgColor':variables.blue2,
+		'dialBgColor':variables.white1,
 		'btnColorClass':'--1',			
 		'background': 'background--1',		
 	},
 	{				
-		'dialBgColor':variables.tan1,
+		'dialBgColor':variables.white1,
 		'btnColorClass':'--2',		
 		'background': 'background--2',		
 	},
 	{				
-		'dialBgColor':variables.grey2,
+		'dialBgColor':variables.white1,
 		'btnColorClass':'--3',		
 		'background': 'background--3',		
 	},		
 	{
-		'dialBgColor': variables.green2,
+		'dialBgColor': variables.white1,
 		'btnColorClass': '--4',	
 		'background': 'background--4',		
 	},
