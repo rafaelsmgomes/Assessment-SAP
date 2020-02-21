@@ -92,14 +92,19 @@ p, li, td {
   font-size : 10px;
   line-height : 17px;
   letter-spacing : 0.1px;
-  color : #312D2A;
+  color : #000000;
     margin-bottom: 17px;
 }
 
 :-ro-matches(p, h1, h2, h3) + p {
     margin-top: 2mm;
 }
-
+.footer{
+    position: absolute;
+    bottom:3px;
+    left:30px;
+    font-size: 8px;
+}
 
 h1 {
     font-family: "BentonSans",Arial, sans-serif;
@@ -191,8 +196,9 @@ a[id] {
 .racetrack{
    width: 34px;
     height: 16px;
-    margin-top: 10px;
-    margin-left: 30px;
+    top: 10px;
+    left: 30px;
+    position: absolute;
 }
 .logo{
  margin-top: 64px;
@@ -361,6 +367,7 @@ a[id] {
 #spider-col{
     background-color: rgba(240,171,0, 0.1);
           height: 613px;
+        margin-top: -30px;
 }
 .spider-chart-holder{
         position: absolute;
@@ -693,10 +700,10 @@ a[id] {
     background-color: #970A82;   
 }
 .relationship .bottom-image{
-    background-image: url(../assets/1x/bg-surf.png);
+    background-color: #E35500 ;
 }
 .lifecycle .bottom-image{
-    background-image: url(../assets/1x/bg-ocean.png);
+    background-color: #4FB81C;
 }
 .action_list_title{
     font-size: 14px;
