@@ -116,7 +116,7 @@
   font-family: OracleB, Arial, Helvetica, sans-serif;
   font-size: 2.80rem;
   margin-top: 2.00rem;
-  color: #fff; }
+  color: #000; }
 
 .results__text--wrapper {
   width: 31.70rem; }
@@ -129,7 +129,7 @@
 
 .results__text--1 {
   font-family: OracleReg, Arial, Helvetica, sans-serif;
-  color: #fff;
+  color: #000;
   font-size: 1rem; }
   @media only screen and (max-width: 1000px) {
     .results__text--1 {
@@ -158,6 +158,8 @@
     background: #E35500; }
   .background--3 {
     background: #4fb81c; }
+  .background--4 {
+    background: #fff; }
   .background.fadeInout {
     animation: bgFadeInOut 1.5s linear normal forwards; }
 
@@ -232,7 +234,7 @@
 .btn__pdf {
   display: flex;
   width: fit-content;
-  background-color: #2B6242;
+  background-color: #008FD3;
   margin: 0 auto;
   margin-top: 3.75rem;
   margin-bottom: 5.00rem;
@@ -1579,7 +1581,8 @@
       background-image: url(../assets/images/desktop/connecting-lines.png);
       background-size: 100%;
       background-repeat: no-repeat;
-      margin-top: -0.80rem; }
+      margin-top: -0.80rem;
+      opacity: 0; }
       @media only screen and (max-width: 1440px) {
         .line__wrapper--x {
           display: none; } }

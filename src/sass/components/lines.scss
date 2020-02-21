@@ -64,7 +64,8 @@
       background-size: 100%;
       background-repeat: no-repeat;      
       margin-top: -0.80rem;
-
+      // display: none;
+      opacity: 0;
       @include bp($width-1){
         display: none;
       }

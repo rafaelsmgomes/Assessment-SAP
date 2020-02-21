@@ -25,6 +25,10 @@
   	// background-image: url(../assets/images/1x/bg-3.png);  		
     background: $color-green-3;
   }    
+  &--4{
+    // background-image: url(../assets/images/1x/bg-3.png);     
+    background: $color-white-1;
+  }      
   &.fadeInout{
   	animation: bgFadeInOut 1.5s linear normal forwards;
   }

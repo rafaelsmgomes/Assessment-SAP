@@ -50,8 +50,8 @@ state.colorScheme = new ColorScheme(
 	},		
 	{
 		'dialBgColor': variables.green2,
-		'btnColorClass': '--0',	
-		'background': 'background--0',		
+		'btnColorClass': '--4',	
+		'background': 'background--4',		
 	},
 	],
 	'pageBreaks':[0,3,5,7,9],			
