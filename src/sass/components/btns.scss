@@ -71,16 +71,16 @@
 		display: flex;		
 
 		&--0{
-			background-color: $color-green-1;
+			background-color: $color-blue-3;
 		}
 		&--1{
-			background-color: $color-blue-1;
+			background-color: $color-purple-1;
 		}
 		&--2{
-			background-color: $color-red-1;	
+			background-color: $color-orange-3;	
 		}
 		&--3{
-			background-color: $color-grey-1;	
+			background-color: $color-green-3;	
 		}		
 
 		&.show{

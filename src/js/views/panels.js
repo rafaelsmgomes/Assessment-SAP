@@ -62,11 +62,12 @@ export const panels = [
 			})}
 		</div>
 		<div class="btn__progress btn__progress--2" data-id='2' data-line='2'></div>
-	</div>`,	
+	</div>`,
+
 	`<div class="panel panel--3">	
 		<div class="body__content">
 			<div class="main__subheader main__subheader--1">
-				Broadcast Marketing
+				Responsive Marketing
 			</div>
 			<div class="main__title main__title--1">
 				Do you send batch-and-blast style communications to wide audiences?
@@ -81,10 +82,10 @@ export const panels = [
 		</div>
 		<div class="btn__progress btn__progress--3" data-id='3' data-line='3'></div>
 	</div>`,
-	`<div class="panel panel--5">	
+	`<div class="panel panel--4">	
 		<div class="body__content">
 			<div class="main__subheader main__subheader--1">
-				Broadcast Marketing
+				Responsive Marketing
 			</div>
 			<div class="main__title main__title--1">
 				How would you rate your use of email and your website as marketing channels?
@@ -97,12 +98,31 @@ export const panels = [
 				'count': true,
 			})}
 		</div>
+		<div class="btn__progress btn__progress--4" data-id='4' data-line='4'></div>
+	</div>`,
+	
+	`<div class="panel panel--5">	
+		<div class="body__content">
+			<div class="main__subheader main__subheader--1">
+				Relationship Marketing
+			</div>
+			<div class="main__title main__title--1">
+				How personalized is your marketing content across your marketing&nbsp;channels?
+			</div>			
+			<div class="main__direction">Please select one response.</div>
+			${comp.createVertfc({				
+				'question':'How personalized is your marketing content across your marketing channels?',
+				'textArr': ['Highly personalized based on behavior',"Minimal, such as 'first name' or 'company'",'Same content for everyone'],
+				'group': 'responsive',
+				'count': true,
+			})}
+		</div>
 		<div class="btn__progress btn__progress--5" data-id='5' data-line='1'></div>
 	</div>`,
 	`<div class="panel panel--6">	
 		<div class="body__content">
 			<div class="main__subheader main__subheader--1">
-				Broadcast Marketing
+				Relationship Marketing
 			</div>
 			<div class="main__title main__title--1">
 				Is your email/marketing automation platform currently integrated with your CRM application?
@@ -117,10 +137,11 @@ export const panels = [
 			</div>
 		<div class="btn__progress btn__progress--6" data-id='6' data-line='2'></div>
 	</div>`,
+
 	`<div class="panel panel--7">	
 		<div class="body__content">
 			<div class="main__subheader main__subheader--1">
-				Broadcast Marketing
+				Lifecycle Engagement
 			</div>
 			<div class="main__title main__title--1">
 				What metrics do you track to show success in your marketing programs?
@@ -135,8 +156,26 @@ export const panels = [
 			<div class='btn__progress btn__progress--7' data-id='7' data-line='3'>Next</div>
 		</div>		
 	</div>`,
-
 	`<div class="panel panel--8">	
+		<div class="body__content">
+			<div class="main__subheader main__subheader--1">
+				Lifecycle Engagement
+			</div>
+			<div class="main__title main__title--1">
+				How many marketers are on your team?
+			</div>			
+			<div class="main__direction">Please select one response.</div>			
+			${comp.createLikert({				
+				'question':'How many marketers are on your team?',
+				'textArr': ['1-2','3-5','5-10','10+'],
+				'group': 'broadcast',
+				'count': false,
+			})}
+		</div>		
+		<div class="btn__progress btn__progress--8" data-id='8' data-line='4'></div>
+	</div>`,
+
+	`<div class="panel panel--9">	
 		<div class="body__content">
 			<h1 class='results__title results__title--1'>Your Marketing Maturity Assessment Results</h1>
 			<div class="wrapper wrapper--1">				

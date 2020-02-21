@@ -30,7 +30,7 @@ state.white = variables.white1;
 state.colorScheme = new ColorScheme(
 	{'colorSchemes':[{
 		'dialBgColor': variables.green2,
-		'btnColorClass': '--0',	
+		'btnColorClass': '--0',    //change	
 		'background': 'background--0',		
 	},
 	{				
@@ -54,7 +54,7 @@ state.colorScheme = new ColorScheme(
 		'background': 'background--0',		
 	},
 	],
-	'pageBreaks':[0,11,21,33,41],			
+	'pageBreaks':[0,3,5,7,9],			
 	}
 );
 
