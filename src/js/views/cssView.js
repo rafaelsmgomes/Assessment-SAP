@@ -36,7 +36,7 @@ export const postState = (cloudObj,timing,state) => {
 	return function(){
 		$('.footer').hide();
 
-		$('.btn__pdf--1').attr('href',`/cx/maturity/pdf/50000`);
+		$('.btn__pdf--1').attr('href',`/sap/pdf/50000`);
 		loadLottie({
 			'cloud--1-0': cloudObj.cloudMain,
 			'cloud--2-0': cloudObj.cloud0,
